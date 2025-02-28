@@ -7,7 +7,7 @@ import input.user
 
 default allowed = false
 
-allowed {
+allowed if {
 	allowedRoles := {"editor", "admin"}
 	some x in allowedRoles
 	user.properties.roles[_] == x
