@@ -7,11 +7,11 @@ import input.user
 
 default allowed = false
 
-allowed {
+allowed if {
 	user.properties.roles[_] == "editor"
 	user.id == resource.properties.ownerID
 }
 
-allowed {
+allowed if {
 	user.properties.roles[_] == "admin"
 }
